@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
+  Input
 } from "@material-tailwind/react";
  
 export default function Example() {
@@ -58,15 +59,9 @@ export default function Example() {
           <img className="w-32" src="./logo-xspotlight.svg" />
         </a>
         <div className="hidden lg:block">{navList}</div>
-        <div>
-          <Button color="dark" size="sm" variant="outlined" className="hidden lg:inline-flex lg:items-center mr-2">
-            <svg className="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fillRule="evenodd" clipRule="evenodd" d="M4.5 1.5C2.84314 1.5 1.5 2.84314 1.5 4.5C1.5 6.15682 2.84314 7.5 4.5 7.5C6.15682 7.5 7.5 6.15682 7.5 4.5C7.5 2.84314 6.15682 1.5 4.5 1.5ZM0 4.5C0 2.01472 2.01472 0 4.5 0C6.98527 0 9 2.01472 9 4.5C9 5.47187 8.6919 6.37177 8.16802 7.10737L11.7803 10.7197C12.0732 11.0125 12.0732 11.4874 11.7803 11.7803C11.4874 12.0732 11.0125 12.0732 10.7197 11.7803L7.10737 8.16802C6.37177 8.6919 5.47187 9 4.5 9C2.01472 9 0 6.98527 0 4.5Z" fill="white"/>
-            </svg>
-
-            Search items, collections, creators…
-          </Button>
-          <Button color="yellow" size="sm" className="hidden lg:inline-flex">
+        <div className="flex items-center">
+          <Input color="dark" className="!py-2" label="Search" />
+          <Button color="yellow" size="sm" className="hidden lg:inline-flex ml-2">
             <img className="w-4 mr-1" src="./icon-connect-black.png" />
             <span>Connect</span>
           </Button>

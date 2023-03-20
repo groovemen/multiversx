@@ -5,8 +5,20 @@ import {
   Typography,
   Button,
   IconButton,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+  Avatar,
 } from "@material-tailwind/react";
  
+import {
+  Cog6ToothIcon,
+  PowerIcon,
+  InboxArrowDownIcon,
+  UserCircleIcon,
+  LifebuoyIcon,
+} from "@heroicons/react/24/outline";
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
  
@@ -56,8 +68,36 @@ export default function Example() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Resources
-          <i className="fas fa-chevron-down text-xs ml-2"></i>
+        <Menu>
+          <MenuHandler>
+            <div>
+              Resources
+              <i className="fas fa-chevron-down text-xs ml-2"></i>
+            </div>
+          </MenuHandler>
+          <MenuList>
+            <MenuItem className="flex items-center gap-2">
+              <Typography variant="small" className="font-normal">
+                My Profile
+              </Typography>
+            </MenuItem>
+            <MenuItem className="flex items-center gap-2">
+              <Typography variant="small" className="font-normal">
+                Edit Profile
+              </Typography>
+            </MenuItem>
+            <MenuItem className="flex items-center gap-2">
+              <Typography variant="small" className="font-normal">
+                Inbox
+              </Typography>
+            </MenuItem>
+            <MenuItem className="flex items-center gap-2">
+              <Typography variant="small" className="font-normal">
+                Help
+              </Typography>
+            </MenuItem>
+          </MenuList>
+        </Menu>
         </a>
       </Typography>
       <Typography

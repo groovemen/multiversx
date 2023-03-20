@@ -12,7 +12,7 @@ import {
  
 export default function Example() {
   return (
-    <Card color="dark" className="w-full max-w-[26rem] shadow-lg">
+    <Card color="dark" className="w-full max-w-[26rem] shadow-lg h-fit">
       <CardHeader floated={false} className="shadow-none">
         <img src="./utrust.png" alt="ui/ux review check" />
       </CardHeader>
@@ -65,14 +65,14 @@ export default function Example() {
           </g>
         </svg>
       </div>
-      <CardBody>
+      <CardBody className="p-4">
         <div className="mb-3 flex items-center justify-between">
           <Typography variant="h5" color="white" className="font-medium">
             Utrust
           </Typography>
           <Chip className="rounded-full" color="green" value="Live" />
         </div>
-        <Typography color="white" className="opacity-70">
+        <Typography color="white" className="opacity-70 font-normal">
           The world’s first crypto payment solution to offer instant
           transactions, buyer protection and crypto-to-cash settlements.
         </Typography>
@@ -99,7 +99,7 @@ export default function Example() {
           </div>
         </div>
       </CardBody>
-      <CardFooter className="flex pt-0">
+      <CardFooter className="flex p-4 pt-0">
         <svg
           width="36"
           height="36"
@@ -133,10 +133,14 @@ export default function Example() {
             />
           </g>
         </svg>
-
-        <Button className="ml-auto" color="dark" size="sm">
-          Swap on Exchange
-        </Button>
+        <div className="ml-auto">
+          <Button className="mr-2" color="dark" size="sm">
+            Buy with card
+          </Button>
+          <Button color="dark" size="sm">
+            Swap on Exchange
+          </Button>
+        </div>
       </CardFooter>
     </Card>
   );

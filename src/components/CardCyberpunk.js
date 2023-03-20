@@ -84,14 +84,14 @@ export default function Example() {
           </g>
         </svg>
       </div>
-      <CardBody>
+      <CardBody className="p-4">
         <div className="mb-3 flex items-center justify-between">
           <Typography variant="h5" color="white" className="font-medium">
             CyberpunkCity
           </Typography>
           <Chip className="rounded-full" color="green" value="Live" />
         </div>
-        <Typography color="white" className="opacity-70">
+        <Typography color="white" className="opacity-70 font-normal">
           One of the world’s first functioning metaverse built on Unreal Engine
           5, offering an immersive and unique gaming experience as well as
           socializing and holding events.
@@ -119,7 +119,7 @@ export default function Example() {
           </div>
         </div>
       </CardBody>
-      <CardFooter className="flex pt-0">
+      <CardFooter className="flex p-4 pt-0">
         <svg
           width="36"
           height="36"

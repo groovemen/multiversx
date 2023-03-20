@@ -145,28 +145,63 @@ const customTheme = {
         'dark'
       ],
     },
-   styles: {
-    variants: {
-      filled: {
-        cyan: {
-          background: "bg-cyan"
-        },
-        yellow: {
-          background: "bg-yellow"
-        },
-        blue: {
-          background: "bg-blue"
-        },
-        red: {
-          background: "bg-red"
-        },
-        dark: {
-          background: "bg-dark"
-        },
+    styles: {
+      variants: {
+        filled: {
+          cyan: {
+            background: "bg-cyan"
+          },
+          yellow: {
+            background: "bg-yellow"
+          },
+          blue: {
+            background: "bg-blue"
+          },
+          red: {
+            background: "bg-red"
+          },
+          dark: {
+            background: "bg-dark"
+          },
 
+        }
       }
     }
-   }
+  },
+
+  input: {
+    styles: {
+      base: {
+        container: {
+          className: "relative w-min min-w-[100px] h-auto flex items-center",
+        },
+        label: {
+          className: "!leading-[3.25]"
+        }
+      },
+      variants: {
+        outlined: {
+          cyan: {
+            background: "bg-cyan"
+          },
+          yellow: {
+            background: "bg-yellow"
+          },
+          blue: {
+            background: "bg-blue"
+          },
+          red: {
+            background: "bg-red"
+          },
+          dark: {
+            background: "bg-dark",
+            className: "border border-[#383B3D]"
+
+          },
+
+        }
+      }
+    }
   }
 }
 root.render(

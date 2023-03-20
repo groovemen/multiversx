@@ -18,7 +18,7 @@ export default function Example() {
   }, []);
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 -mr-32 bg-[##17191A]">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 -mr-32 !bg-[#17191A] py-2 px-4 rounded-full">
       <Typography
         as="li"
         variant="small"

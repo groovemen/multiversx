@@ -99,14 +99,14 @@ export default function Example() {
           </defs>
         </svg>
       </div>
-      <CardBody>
+      <CardBody className="p-4">
         <div className="mb-3 flex items-center justify-between">
           <Typography variant="h5" color="white" className="font-medium">
             Sense4FIT
           </Typography>
           <Chip className="rounded-full" color="green" value="Live" />
         </div>
-        <Typography color="white" className="opacity-70">
+        <Typography color="white" className="opacity-70 font-normal">
           Sense4FIT is a Web3 Fit2Earn Lifestyle ecosystem with game-fi elements
           that has the goal of helping people to become better versions of
           themselves and get rewarded while achieving their goals.
@@ -134,7 +134,7 @@ export default function Example() {
           </div>
         </div>
       </CardBody>
-      <CardFooter className="flex pt-0">
+      <CardFooter className="flex p-4 pt-0">
         <svg
           width="36"
           height="36"

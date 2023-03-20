@@ -4,6 +4,7 @@ import Button from './Button.js'
 import CardCyberpunk from './components/CardCyberpunk.js'
 import CardSense4fit from './components/CardSense4fit.js'
 import CardUtrust from './components/CardUtrust.js'
+import CardAI from './components/CardAI.js'
 import NavbarMultiversx from './components/NavbarMultiversx.js'
 import NavbarPortalx from './components/NavbarPortalx.js'
 import NavbarExchangex from './components/NavbarExchangex.js'
@@ -39,6 +40,7 @@ function App() {
         <CardCyberpunk />
         <CardSense4fit />
         <CardUtrust />
+        <CardAI />
       </div>
 
     </div>
