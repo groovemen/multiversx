@@ -23,11 +23,12 @@ export default function Example() {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal text-cyan"
+        className="p-1 font-normal text-cyan relative"
       >
         <a href="#" className="flex items-center">
           Develop
         </a>
+        <div className="absolute w-1 h-1 rounded-full bg-cyan text-center mt-1 left-0 right-0 mx-auto"></div>
       </Typography>
       <Typography
         as="li"
@@ -80,7 +81,7 @@ export default function Example() {
             <i className="fas fa-paper-plane text-white"></i>
           </a>
         
-          <Input color="dark" className="!py-2" label="Search" />
+          <Input color="dark" className="!py-2" label="Search" icon={<i className="fas fa-search" />} />
 
           <a href="#">
             <i className="fas fa-clone text-white"></i>

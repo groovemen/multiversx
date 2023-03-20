@@ -22,12 +22,12 @@ export default function Example() {
       <Typography
         as="li"
         variant="small"
-        // color="white"
-        className="p-1 font-normal text-cyan"
+        className="p-1 font-normal text-cyan relative"
       >
         <a href="#" className="flex items-center">
           Finance
         </a>
+        <div className="absolute w-1 h-1 rounded-full bg-cyan text-center mt-1 left-0 right-0 mx-auto"></div>
       </Typography>
       <Typography
         as="li"

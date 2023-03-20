@@ -22,11 +22,12 @@ export default function Example() {
       <Typography
         as="li"
         variant="small"
-        className="p-1 font-normal text-blue"
+        className="p-1 font-normal text-blue relative"
       >
         <a href="#" className="flex items-center">
           Swap
         </a>
+        <div className="absolute w-1 h-1 rounded-full bg-blue text-center mt-1 left-0 right-0 mx-auto"></div>
       </Typography>
       <Typography
         as="li"

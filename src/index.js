@@ -173,7 +173,7 @@ const customTheme = {
     styles: {
       base: {
         container: {
-          className: "relative w-min min-w-[100px] h-auto flex items-center",
+          className: "relative w-min !min-w-[100px] h-auto flex items-center",
         },
         label: {
           className: "!leading-[3.25]"
